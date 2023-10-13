@@ -1,119 +1,56 @@
 import React, { useState } from "react";
-import { useTheme } from "styled-components";
-import {
-  Nav,
-  NavLink,
-  NavbarContainer,
-  Span,
-  NavLogo,
-  NavItems,
-  GitHubButton,
-  ButtonContainer,
-  MobileIcon,
-  MobileMenu,
-  MobileNavLogo,
-  MobileLink,
-} from "../../styles/NavbarStyled";
-import { FaBars } from "react-icons/fa";
-import { Bio } from "../../data/constants";
-import { Close, CloseRounded } from "@mui/icons-material";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
+import navlinks from "../../config/navlinks";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const theme = useTheme();
+  const [nav, setNav] = useState(false);
+
   return (
-    <Nav>
-      <NavbarContainer>
-        <NavLogo to="/">
-          <a
-            style={{
-              display: "flex",
-              alignItems: "center",
-              color: "white",
-              marginBottom: "20;",
-              cursor: "pointer",
-            }}
-          >
-            <Span>{Bio.name}</Span>
-          </a>
-        </NavLogo>
-        <MobileIcon>
-          <FaBars
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          />
-        </MobileIcon>
-        <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
-        </NavItems>
-        <ButtonContainer>
-          <GitHubButton href={Bio.github} target="_blank">
-            Github Profile
-          </GitHubButton>
-        </ButtonContainer>
-        {isOpen && (
-          <MobileMenu isOpen={isOpen}>
-            <MobileLink
-              href="#about"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
+    <>
+      <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+        <div>
+          <h1 className="text-5xl font-signature ml-2">Miguel Remédios</h1>
+        </div>
+        <ul className="hidden md:flex">
+          {navlinks.map(({ id, link }) => (
+            <li
+              key={id}
+              className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
             >
-              About
-            </MobileLink>
-            <MobileLink
-              href="#skills"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              Skills
-            </MobileLink>
-            <MobileLink
-              href="#experience"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              Experience
-            </MobileLink>
-            <MobileLink
-              href="#projects"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              Projects
-            </MobileLink>
-            <MobileLink
-              href="#education"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              Education
-            </MobileLink>
-            <GitHubButton
-              style={{
-                padding: "10px 16px",
-                background: `${theme.primary}`,
-                color: "white",
-                width: "max-content",
-              }}
-              href={Bio.github}
-              target="_blank"
-            >
-              Github Profile
-            </GitHubButton>
-          </MobileMenu>
+              <Link to={link} smooth duration={500}>
+                {link}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div
+          onClick={() => setNav(!nav)}
+          className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        >
+          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        </div>
+        {nav && (
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+            {navlinks.map(({ id, link }) => (
+              <li
+                key={id}
+                className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              >
+                <Link
+                  onClick={() => setNav(!nav)}
+                  to={link}
+                  smooth
+                  duration={500}
+                >
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
         )}
-      </NavbarContainer>
-    </Nav>
+      </div>
+    </>
   );
 }
 
