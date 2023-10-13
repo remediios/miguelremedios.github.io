@@ -1,12 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
+import Hero from "./components/hero/Hero";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
-    </Router>
+      <Hero />
+    </>
   );
 }
 

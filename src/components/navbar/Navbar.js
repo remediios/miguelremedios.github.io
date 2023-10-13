@@ -19,7 +19,7 @@ function Navbar() {
           {navlinks.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize font-medium text-black-500 hover:scale-105 duration-200 relative hover:text-gray-500"
+              className="px-4 cursor-pointer capitalize font-medium text-black-500 duration-200 relative hover:text-gray-600"
             >
               <Link
                 to={link}
