@@ -17,7 +17,7 @@ export const links = [
   },
   {
     id: 5,
-    link: "portofolio",
+    link: "portfolio",
   },
   {
     id: 6,
