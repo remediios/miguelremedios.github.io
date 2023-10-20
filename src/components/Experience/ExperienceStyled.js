@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import TimelineDot from "@mui/lab/TimelineDot";
+import { HiOutlineAcademicCap } from "react-icons/hi";
 
 export const Container = styled.div`
   display: flex;
@@ -22,7 +23,6 @@ export const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1350px;
-  padding: 80px 0;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -67,4 +67,18 @@ export const TimelineDotStyled = styled(TimelineDot)`
   &.MuiTimelineDot-filled {
     background-color: ${({ theme }) => theme.timeline_dots};
     color: ${({ theme }) => theme.timeline_dots};
+`;
+
+export const TitleDiv = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-left: 100px;
+`;
+
+export const EducationIcon = styled(HiOutlineAcademicCap)`
+  font-size: 32px;
+  color: ${({ theme }) => theme.timeline_dots};
+  margin: 12px 20px 0px;
+  cursor: pointer;
 `;

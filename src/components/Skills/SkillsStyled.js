@@ -18,6 +18,8 @@ export const Wrapper = styled.div`
   width: 100%;
   max-width: 1100px;
   gap: 12px;
+  padding-top: 20px;
+  padding-bottom: 100px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
