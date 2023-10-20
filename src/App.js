@@ -34,6 +34,7 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
+
 function App() {
   // eslint-disable-next-line
   const [darkMode, setDarkMode] = useState(true);
@@ -47,7 +48,8 @@ function App() {
           <HeroSection />
           <Wrapper>
             <Skills />
-            {/** <Experience />*/}
+            <Experience />
+            <Education />
           </Wrapper>
           {/**<Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
