@@ -45,6 +45,7 @@ export const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   max-width: 600px;
+  margin-left: 60px;
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     margin-top: 12px;
@@ -79,6 +80,6 @@ export const TitleDiv = styled.div`
 export const EducationIcon = styled(HiOutlineAcademicCap)`
   font-size: 32px;
   color: ${({ theme }) => theme.timeline_dots};
-  margin: 12px 20px 0px;
+  margin: 15px 20px 0px;
   cursor: pointer;
 `;

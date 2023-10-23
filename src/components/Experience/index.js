@@ -29,10 +29,7 @@ const index = ({ setEnabled }) => {
             }}
           />
         </TitleDiv>
-        <Desc>
-          My work experience as a software engineer and working on different
-          companies and projects.
-        </Desc>
+        <Desc>My work experience throughout the years</Desc>
         <Wrapper>
           <TimelineSection>
             <Timeline>

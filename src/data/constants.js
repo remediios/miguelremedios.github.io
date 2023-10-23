@@ -1,5 +1,8 @@
 import elecctro from "../images/experience/elecctro_logo.jpeg";
 import tvremedios from "../images/experience/tvremedios_logo.jpg";
+import kcl from "../images/education/kcl.svg";
+import brunel from "../images/education/brunel.svg";
+import extp from "../images/education/extp.jpg";
 
 export const Bio = {
   name: "Miguel Remédios",
@@ -202,30 +205,30 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-    school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-    date: "Oct 2021 - Sep 2025",
-    grade: "8.71 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
+    img: kcl,
+    school: "King's College London",
+    date: "Sep 2022 - Sep 2023",
+    grade: "To be determined",
+    desc: "DrGeLOo4r5A4Ae0t91d51LFCmLi1Cxt8X4fXpgd2g54xOSfjx7nQ0TTn67ulRLsG5XVPC4jxcWVCGvo8vwbNTtxlZF2v3fh LwH9CZ99SZ2lOryle1mZs1S878JO2UKE2F4",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2019 - Apr 2025",
-    grade: "88.2%",
-    desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-    degree: "ISC(XII), Science with Computer",
+    img: brunel,
+    school: "Brunel University London",
+    date: "Apr 2019 - Apr 2022",
+    grade: "1st Class Honours (1:1)",
+    desc: "LOC4zw5AI4QmhmreFYiAkPeDCc3GjsqLZWmg2TpZzkA0hkdPRWwzjUdGVXgcjCYbxtUVY16s4ZuW6MUutuh3e1Q7ffQTQO936N1Z4mcufzf asas",
+    degree: "BSc (Hons) Computer Science (Software Engineering)",
   },
   {
     id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
+    img: extp,
+    school: "Externato de Penafirme",
     date: "Apr 2017 - Apr 2019",
-    grade: "92.3%",
-    desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-    degree: "ICSC(X), Science with Computer",
+    grade: "14/20",
+    desc: "Completed 3 years of Sciences and Technology degree at the high school.",
+    degree: "Sciences and Technology",
   },
 ];
 
