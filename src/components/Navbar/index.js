@@ -14,11 +14,11 @@ import {
   MobileLink,
 } from "./NavbarStyledComponent";
 import { FaBars } from "react-icons/fa";
-import { BsSun } from "react-icons/bs";
+import { BsSunFill, BsMoonFill } from "react-icons/bs";
 import { Bio } from "../../data/constants";
 import { useTheme } from "styled-components";
 
-const Navbar = ({ setDarkMode }) => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme();
   return (
@@ -51,12 +51,21 @@ const Navbar = ({ setDarkMode }) => {
           <NavLink href="#projects">Projects</NavLink>
         </NavItems>
         <ButtonContainer>
-          <BsSun
-            style={{ color: "white", fontSize: "20px" }}
-            onClick={() => {
-              setDarkMode(false);
-            }}
-          />
+          {darkMode ? (
+            <BsSunFill
+              style={{ color: "white", fontSize: "20px" }}
+              onClick={() => {
+                setDarkMode(false);
+              }}
+            />
+          ) : (
+            <BsMoonFill
+              style={{ color: "black", fontSize: "20px" }}
+              onClick={() => {
+                setDarkMode(true);
+              }}
+            />
+          )}
           {/** <GitHubButton href={Bio.github} target="_blank">
             Github Profile
           </GitHubButton>*/}
