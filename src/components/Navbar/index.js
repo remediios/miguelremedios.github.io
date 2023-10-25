@@ -17,9 +17,12 @@ import { FaBars } from "react-icons/fa";
 import { BsSunFill, BsMoonFill } from "react-icons/bs";
 import { Bio } from "../../data/constants";
 import { useTheme } from "styled-components";
+import { useContext } from "react";
+import { ContextAPI } from "../../context/ContextAPI";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const { enabled, setEnabled } = useContext(ContextAPI);
   const theme = useTheme();
   return (
     <Nav>
@@ -46,8 +49,22 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink
+            href="#experience"
+            onClick={() => {
+              setEnabled(true);
+            }}
+          >
+            Experience
+          </NavLink>
+          <NavLink
+            href="#education"
+            onClick={() => {
+              setEnabled(false);
+            }}
+          >
+            Education
+          </NavLink>
           <NavLink href="#projects">Projects</NavLink>
         </NavItems>
         <ButtonContainer>
