@@ -8,12 +8,14 @@ import { ContextAPI } from "../../context/ContextAPI";
 function ExEduParent() {
   const { enabled, setEnabled } = useContext(ContextAPI);
 
-  useEffect(() => {
-    console.log(enabled);
-  }, []);
-
   return (
-    <>{enabled ? <Experience setEnabled={setEnabled} /> : <Education />}</>
+    <>
+      {enabled ? (
+        <Experience setEnabled={setEnabled} />
+      ) : (
+        <Education setEnabled={setEnabled} />
+      )}
+    </>
   );
 }
 

@@ -18,7 +18,7 @@ import { BsSun } from "react-icons/bs";
 import { Bio } from "../../data/constants";
 import { useTheme } from "styled-components";
 
-const Navbar = () => {
+const Navbar = ({ setDarkMode }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme();
   return (
@@ -54,7 +54,7 @@ const Navbar = () => {
           <BsSun
             style={{ color: "white", fontSize: "20px" }}
             onClick={() => {
-              console.log("test");
+              setDarkMode(false);
             }}
           />
           {/** <GitHubButton href={Bio.github} target="_blank">

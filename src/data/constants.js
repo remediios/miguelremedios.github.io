@@ -3,6 +3,8 @@ import tvremedios from "../images/experience/tvremedios_logo.jpg";
 import kcl from "../images/education/kcl.svg";
 import brunel from "../images/education/brunel.svg";
 import extp from "../images/education/extp.jpg";
+import kcl_thesis from "../images/education/kcl_thesis.png";
+import brunel_thesis from "../images/education/brunel_thesis.png";
 
 export const Bio = {
   name: "Miguel Remédios",
@@ -209,26 +211,36 @@ export const education = [
     school: "King's College London",
     date: "Sep 2022 - Sep 2023",
     grade: "To be determined",
-    desc: "DrGeLOo4r5A4Ae0t91d51LFCmLi1Cxt8X4fXpgd2g54xOSfjx7nQ0TTn67ulRLsG5XVPC4jxcWVCGvo8vwbNTtxlZF2v3fh LwH9CZ99SZ2lOryle1mZs1S878JO2UKE2F4",
-    degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+    desc: "Studied an intensive year of Advanced Computing at King's College London for my Master's degree. Throughout the course, several important modules were studied from artificial intelligence to cybersecurity and software engineering subjects. A dissertation was written on the topic evidenced covering all insights and experience gained throughout the year and much more personal development.",
+    degree: "MSc Advanced Computing",
+    thesis: [
+      "Applying Machine Learning Naïve Bayes for Real-Time Cryptocurrency Price Prediction: An Empirical Study",
+    ],
+    doc: kcl_thesis,
   },
   {
     id: 1,
     img: brunel,
     school: "Brunel University London",
-    date: "Apr 2019 - Apr 2022",
+    date: "Sep 2019 - Jun 2022",
     grade: "1st Class Honours (1:1)",
-    desc: "LOC4zw5AI4QmhmreFYiAkPeDCc3GjsqLZWmg2TpZzkA0hkdPRWwzjUdGVXgcjCYbxtUVY16s4ZuW6MUutuh3e1Q7ffQTQO936N1Z4mcufzf asas",
+    desc: "Studied 3 years of Computer Science in this university for my Bachelor's degree, achieving a 1st Class Honours grade. This degree covered all important state-of-the-art topics from fundamentals to cybersecurity, software engineering and artificial intelligence. My specialisation with this degree is Software Engineering and a dissertation on the topic was written, achieving an A grade by the end.",
     degree: "BSc (Hons) Computer Science (Software Engineering)",
+    thesis: [
+      "Behaviour-Based Biometrical Continuous Authentication in Web Applications",
+    ],
+    doc: brunel_thesis,
   },
   {
     id: 2,
     img: extp,
     school: "Externato de Penafirme",
-    date: "Apr 2017 - Apr 2019",
+    date: "Sep 2017 - Jun 2019",
     grade: "14/20",
     desc: "Completed 3 years of Sciences and Technology degree at the high school.",
     degree: "Sciences and Technology",
+    thesis: "",
+    doc: "",
   },
 ];
 

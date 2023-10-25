@@ -36,7 +36,7 @@ const Span = styled.span`
 const Card = styled.div`
   width: 650px;
   border-radius: 10px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  box-shadow: rgba(255, 223, 135, 0.15) 0px 4px 24px;
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
@@ -63,7 +63,7 @@ const Card = styled.div`
     overflow: visible;
     -webkit-line-clamp: unset;
   }
-  border: 0.1px solid #854ce6;
+  border: 0.1px solid #e3c400;
 `;
 
 const Top = styled.div`
@@ -125,6 +125,30 @@ const Grade = styled.div`
   }
 `;
 
+const Thesis = styled.div`
+  font-size: 15px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 99};
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+
+const ItemWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+`;
+
+const ThesisTopic = styled.div`
+  font-size: 15px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 99};
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+
 const EducationCard = ({ education }) => {
   return (
     <Card>
@@ -143,6 +167,23 @@ const EducationCard = ({ education }) => {
       <Description>
         <Span>{education.desc}</Span>
       </Description>
+      {education?.thesis && (
+        <>
+          <Thesis>
+            <h4>Dissertation</h4>
+            <ItemWrapper>
+              {education?.thesis?.map((thesis, index) => (
+                <ThesisTopic>{thesis}</ThesisTopic>
+              ))}
+            </ItemWrapper>
+          </Thesis>
+        </>
+      )}
+      {education.doc && (
+        <a href={education.doc} target="new">
+          <Document src={education.doc} />
+        </a>
+      )}
     </Card>
   );
 };
