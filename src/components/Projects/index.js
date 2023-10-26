@@ -40,28 +40,11 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="web app"
               onClick={() => setToggle("web app")}
             >
-              WEB APP'S
+              WEB APPLICATIONS
             </ToggleButton>
           ) : (
             <ToggleButton value="web app" onClick={() => setToggle("web app")}>
-              WEB APP'S
-            </ToggleButton>
-          )}
-          <Divider />
-          {toggle === "android app" ? (
-            <ToggleButton
-              active
-              value="android app"
-              onClick={() => setToggle("android app")}
-            >
-              ANDROID APP'S
-            </ToggleButton>
-          ) : (
-            <ToggleButton
-              value="android app"
-              onClick={() => setToggle("android app")}
-            >
-              ANDROID APP'S
+              WEB APPLICATIONS
             </ToggleButton>
           )}
           <Divider />
@@ -79,6 +62,20 @@ const Projects = ({ openModal, setOpenModal }) => {
               onClick={() => setToggle("machine learning")}
             >
               MACHINE LEARNING
+            </ToggleButton>
+          )}
+          <Divider />
+          {toggle === "others" ? (
+            <ToggleButton
+              active
+              value="others"
+              onClick={() => setToggle("others")}
+            >
+              OTHERS
+            </ToggleButton>
+          ) : (
+            <ToggleButton value="others" onClick={() => setToggle("others")}>
+              OTHERS
             </ToggleButton>
           )}
         </ToggleButtonGroup>
