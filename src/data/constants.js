@@ -5,6 +5,7 @@ import brunel from "../images/education/brunel.svg";
 import extp from "../images/education/extp.jpg";
 import kcl_thesis from "../images/education/kcl_thesis.png";
 import brunel_thesis from "../images/education/brunel_thesis.png";
+import remedios_logo from "../images/remedios-yellow.png";
 
 export const Bio = {
   name: "Miguel Remédios",
@@ -296,23 +297,70 @@ export const projects = [
     category: "machine learning",
     github: "https://github.com/rishavchanda/Podstream",
     webapp: "https://podstream.netlify.app/",
-    /*member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
-    ],*/
   },
   {
     id: 2,
+    title: "TheSilentIngredient",
+    date: "Sep 2020 - Mar 2021",
+    description:
+      "The Silent Ingredient is a project based on a recipe search engine, the website simply allows people who have spare/left over ingredients in their household who do not know what to prepare with it. They can use the website to input the left over ingredients and instead of throwing the ingredients away, the website will be able to provide a recipe according to the users diet be it halal, vegan or vegetarian. We aim to work towards 4 Sustainable Development Goals (Zero Hunger, Good health and well being, Responsible consumption and prodution, Climate action) ",
+    image:
+      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
+    tags: [
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Javascript",
+      "HTML",
+      "CSS",
+      "Agile/SCRUM",
+      "CI/CD",
+      "MVC",
+    ],
+    category: "web app",
+    github: "https://github.com/MiguelRemedios/the-silent-ingredient",
+    webapp: "",
+    member: [
+      {
+        name: "Miguel Remedios",
+        img: remedios_logo,
+        github: "https://github.com/rishavchanda/",
+        linkedin: "https://www.linkedin.com/in/miguelremediioss/",
+      },
+      {
+        name: "Abbasali Nasser",
+        img: "remedios_logo",
+        github: "https://github.com/Abbasali110",
+      },
+      {
+        name: "Viktor Atanasov",
+        img: "remedios_logo",
+        github: "https://github.com/ViktorAtanasov4",
+      },
+      {
+        name: "Matthew Garner",
+        img: "remedios_logo",
+        github: "https://github.com/MatthewGarner572",
+      },
+      {
+        name: "Mara Correia",
+        img: "remedios_logo",
+        github: "https://github.com/MaraCorreia",
+      },
+      {
+        name: "Smith Maniar",
+        img: "remedios_logo",
+        github: "https://github.com/Smith-16",
+      },
+      {
+        name: "Meli Bueno",
+        img: "remedios_logo",
+        github: "https://github.com/meli193",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "Crypto-Eye",
     date: "Nov 2021 - Dec 2021",
     description:
@@ -330,19 +378,6 @@ export const projects = [
     category: "web app",
     github: "https://github.com/rishavchanda/Project-Management-App",
     webapp: "https://vexa-app.netlify.app/",
-  },
-  {
-    id: 3,
-    title: "Brain Tumor Detection",
-    date: "Jan 2023 - Mar 2023",
-    description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
-    image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-    category: "machine learning",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
   },
   {
     id: 4,
