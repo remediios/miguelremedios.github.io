@@ -8,6 +8,7 @@ import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact/";
 
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
@@ -69,10 +70,10 @@ function App() {
             <WrapperProjects>
               <Projects openModal={openModal} setOpenModal={setOpenModal} />
             </WrapperProjects>
-            {/**<Wrapper>
+            <Wrapper>
               <Contact />
-            </Wrapper>*/}
-            {/**<Footer />*/}
+            </Wrapper>
+            <Footer />
             {openModal.state && (
               <ProjectDetails
                 openModal={openModal}

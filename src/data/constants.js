@@ -6,6 +6,7 @@ import extp from "../images/education/extp.jpg";
 import kcl_thesis from "../images/education/kcl_thesis.png";
 import brunel_thesis from "../images/education/brunel_thesis.png";
 import remedios_logo from "../images/remedios-yellow.png";
+import todoapp from "../images/projects/todoapp.png";
 
 export const Bio = {
   name: "Miguel Remédios",
@@ -252,8 +253,7 @@ export const projects = [
     date: "Sep 2022 - Aug 2023",
     description:
       "Cryptocurrencies have become a focal point of interest for investors and enthusiasts worldwide. Predicting their volatile prices is a challenge that can be addressed through machine learning. As part of my MSc in Advanced Computing at King's College London, I embarked on a research journey to develop a real-time and user-inputted cryptocurrency price prediction system using the Naive Bayes algorithm. This project is linked to a research study written for my thesis where further comparison with other machine learning models is performed to assess prediction performance.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    image: todoapp,
     tags: [
       "React.JS",
       "Python",
@@ -269,7 +269,7 @@ export const projects = [
     ],
     category: "machine learning",
     github: "https://github.com/MiguelRemedios/cryptocurrency-trading",
-    webapp: "",
+    webapp: "https://miguelremedios.pt",
   },
   {
     id: 1,
@@ -278,8 +278,7 @@ export const projects = [
     date: "Sep 2021 - May 2022",
     description:
       "In today's interconnected world, ensuring the security of web applications and user data is paramount. This project represents a groundbreaking initiative conceived as my final year project for the Computer Science degree at Brunel University London. This project addresses the critical need for enhancing web application security through continuous authentication. Rather than relying solely on traditional, often vulnerable methods like usernames and passwords, this project pioneers the use of biometric behavioral patterns as a more robust and user-friendly authentication mechanism. A research study is associated with this project where more details are documented on how a Logistic Regression Machine Learning model is used to perform intrusion detection.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+    image: todoapp,
     tags: [
       "React.Js",
       "Python",
@@ -296,7 +295,7 @@ export const projects = [
     ],
     category: "machine learning",
     github: "https://github.com/rishavchanda/Podstream",
-    webapp: "https://podstream.netlify.app/",
+    webapp: "https://miguelremedios.pt",
   },
   {
     id: 2,
@@ -304,8 +303,7 @@ export const projects = [
     date: "Sep 2020 - Mar 2021",
     description:
       "The Silent Ingredient is a project based on a recipe search engine, the website simply allows people who have spare/left over ingredients in their household who do not know what to prepare with it. They can use the website to input the left over ingredients and instead of throwing the ingredients away, the website will be able to provide a recipe according to the users diet be it halal, vegan or vegetarian. We aim to work towards 4 Sustainable Development Goals (Zero Hunger, Good health and well being, Responsible consumption and prodution, Climate action) ",
-    image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
+    image: todoapp,
     tags: [
       "Java",
       "SpringBoot",
@@ -365,8 +363,7 @@ export const projects = [
     date: "Nov 2021 - Dec 2021",
     description:
       "Crypto-Eye is an open-source web application designed to provide users with real-time insights into the dynamic world of cryptocurrencies. This project, developed using ReactJS, harnesses the power of the CoinGecko API to offer a comprehensive view of market statistics and historical data for a wide range of cryptocurrencies. By offering a real-time look at cryptocurrency market statistics, this project empowers users with knowledge and data to navigate the world of digital currencies. It's a testament to the power of open-source collaboration and a valuable resource for anyone interested in cryptocurrencies and their financial implications.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+    image: todoapp,
     tags: [
       "React Js",
       "Javascript",
@@ -376,21 +373,26 @@ export const projects = [
       "Material UI",
     ],
     category: "web app",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
+    github: "https://github.com/MiguelRemedios/crypto-eye",
+    webapp: "",
   },
   {
     id: 4,
     title: "TODO List App",
-    date: "Dec 2021 - Apr 2022",
+    date: "Jun 2021 - Jun 2021",
     description:
-      "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
-    image:
-      "https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-    tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
-    category: "others",
-    github: "https://github.com/rishavchanda/Buckoid-Android-App",
-    webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+      "This is a front-end web application that consists of providing to its users a bunch of different ways to allow them to better organise their bare hand's tasks by always having an updatable TODO task list.",
+    image: todoapp,
+    tags: [
+      "ReactJS",
+      "Javascript",
+      "NodeJS",
+      "LocalStorage",
+      "Styled-components",
+    ],
+    category: "web app",
+    github: "https://github.com/MiguelRemedios/TODOlist",
+    webapp: "",
   },
 ];
 
