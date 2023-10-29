@@ -17,20 +17,22 @@ import emailjs from "@emailjs/browser";
 function Contact() {
   const [form] = Form.useForm();
 
-  const onFinish = (e) => {
-    console.log("Success:", e);
-
-    emailjs.sendForm("", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID").then(
-      (result) => {
-        console.log("Email sent successfully:", result.text);
-        openNotificationWithIcon("success");
-        form.resetFields();
-      },
-      (error) => {
-        console.log("Email sending failed:", error.text);
-        //   openNotificationWithIcon("error");
-      }
-    );
+  const onFinish = (values) => {
+    console.log("Success:", values);
+    emailjs
+      .sendForm("service_ta1v1pm", "template_bccmebd", values, "YOUR_USER_ID")
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          openNotificationWithIcon("success");
+          form.resetFields();
+        },
+        (error) => {
+          console.log("Email sending failed:", error.text);
+          openNotificationWithIcon("error");
+          form.resetFields();
+        }
+      );
   };
 
   const [api, contextHolder] = notification.useNotification();
