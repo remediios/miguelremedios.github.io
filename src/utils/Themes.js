@@ -11,6 +11,7 @@ export const darkTheme = {
   black: "#000000",
   timeline_dots: "#ffff",
   company_course: "#beb266",
+  hero_button: "#4d4d4d",
 };
 
 export const lightTheme = {
@@ -26,4 +27,5 @@ export const lightTheme = {
   black: "#000000",
   timeline_dots: "#000000",
   company_course: "#beb266",
+  hero_button: "#8a8a8a",
 };
