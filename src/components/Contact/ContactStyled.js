@@ -63,7 +63,7 @@ export const ContactForm = styled.form`
   border-radius: 16px;
   box-shadow: rgba(230, 188, 5, 0.15) 0px 4px 24px;
   margin-top: 28px;
-  gap: 12px;
+  gap: 15px;
 `;
 
 export const ContactTitle = styled.div`
@@ -81,7 +81,6 @@ export const ContactInput = styled.input`
   font-size: 18px;
   color: ${({ theme }) => theme.text_primary};
   border-radius: 12px;
-  margin-bottom: 4px;
   padding: 12px 16px;
   &:focus {
     border: 1px solid ${({ theme }) => theme.primary};
@@ -146,4 +145,9 @@ export const ContactButton = styled.input`
   color: ${({ theme }) => theme.white};
   font-size: 18px;
   font-weight: 500;
+`;
+
+export const ErrorMessage = styled.p`
+  color: #ff4a4a;
+  margin-bottom: 4px;
 `;

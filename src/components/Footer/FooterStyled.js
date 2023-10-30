@@ -22,7 +22,7 @@ export const FooterWrapper = styled.footer`
 export const Logo = styled.h1`
   font-weight: 600;
   font-size: 22px;
-  color: ${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.text_primary};
 `;
 
 export const Nav = styled.nav`

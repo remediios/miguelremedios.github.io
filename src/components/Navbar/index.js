@@ -130,16 +130,18 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </MobileLink>
             {darkMode ? (
               <BsSunFill
-                style={{ color: "white", fontSize: "20px" }}
+                style={{ color: "white", fontSize: "20px", cursor: "pointer" }}
                 onClick={() => {
                   setDarkMode(false);
+                  setIsOpen(!isOpen);
                 }}
               />
             ) : (
               <BsMoonFill
-                style={{ color: "black", fontSize: "20px" }}
+                style={{ color: "black", fontSize: "20px", cursor: "pointer" }}
                 onClick={() => {
                   setDarkMode(true);
+                  setIsOpen(!isOpen);
                 }}
               />
             )}

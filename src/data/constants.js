@@ -202,7 +202,11 @@ export const experiences = [
     company: "TvRemédios Reparações",
     date: "June 2017 - August 2019",
     desc: "Installed and configured software and hardware in several client devices. In addition, troubleshooted client’s hardware problems and either repaired or replaced them. Configured hardware, devices and software to set up work stations for the different enterprise employees.",
-    skills: ["Malware removal", "Hardware installation and replacement", "s"],
+    skills: [
+      "Malware removal",
+      "Hardware installation and replacement",
+      "Workstation's setup",
+    ],
     doc: "",
   },
 ];
