@@ -47,7 +47,7 @@ function Contact() {
   return (
     <>
       {contextHolder}
-      <Container>
+      <Container id="contact">
         <Wrapper>
           <Title>Contact</Title>
           <Desc>Do not hesitate to contact me for any reason!</Desc>

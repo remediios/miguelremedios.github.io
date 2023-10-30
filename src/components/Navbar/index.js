@@ -83,9 +83,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               }}
             />
           )}
-          {/** <GitHubButton href={Bio.github} target="_blank">
-            Github Profile
-          </GitHubButton>*/}
         </ButtonContainer>
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
@@ -109,9 +106,19 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               href="#experience"
               onClick={() => {
                 setIsOpen(!isOpen);
+                setEnabled(true);
               }}
             >
               Experience
+            </MobileLink>
+            <MobileLink
+              href="#education"
+              onClick={() => {
+                setIsOpen(!isOpen);
+                setEnabled(false);
+              }}
+            >
+              Education
             </MobileLink>
             <MobileLink
               href="#projects"
@@ -121,26 +128,21 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             >
               Projects
             </MobileLink>
-            <MobileLink
-              href="#education"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            >
-              Education
-            </MobileLink>
-            {/**<GitHubButton
-              style={{
-                padding: "10px 16px",
-                background: `${theme.primary}`,
-                color: "white",
-                width: "max-content",
-              }}
-              href={Bio.github}
-              target="_blank"
-            >
-              Github Profile
-            </GitHubButton> */}
+            {darkMode ? (
+              <BsSunFill
+                style={{ color: "white", fontSize: "20px" }}
+                onClick={() => {
+                  setDarkMode(false);
+                }}
+              />
+            ) : (
+              <BsMoonFill
+                style={{ color: "black", fontSize: "20px" }}
+                onClick={() => {
+                  setDarkMode(true);
+                }}
+              />
+            )}
           </MobileMenu>
         )}
       </NavbarContainer>
