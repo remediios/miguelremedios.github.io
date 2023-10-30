@@ -6,6 +6,7 @@ import extp from "../images/education/extp.jpg";
 import kcl_thesis from "../images/education/kcl_thesis.png";
 import brunel_thesis from "../images/education/brunel_thesis.png";
 import remedios_logo from "../images/remedios-yellow.png";
+import profile_logo from "../images/projects/profile.svg";
 import todoapp from "../images/projects/todoapp.png";
 
 export const Bio = {
@@ -327,32 +328,32 @@ export const projects = [
       },
       {
         name: "Abbasali Nasser",
-        img: "remedios_logo",
+        img: profile_logo,
         github: "https://github.com/Abbasali110",
       },
       {
         name: "Viktor Atanasov",
-        img: "remedios_logo",
+        img: profile_logo,
         github: "https://github.com/ViktorAtanasov4",
       },
       {
         name: "Matthew Garner",
-        img: "remedios_logo",
+        img: profile_logo,
         github: "https://github.com/MatthewGarner572",
       },
       {
         name: "Mara Correia",
-        img: "remedios_logo",
+        img: profile_logo,
         github: "https://github.com/MaraCorreia",
       },
       {
         name: "Smith Maniar",
-        img: "remedios_logo",
+        img: profile_logo,
         github: "https://github.com/Smith-16",
       },
       {
         name: "Meli Bueno",
-        img: "remedios_logo",
+        img: profile_logo,
         github: "https://github.com/meli193",
       },
     ],
