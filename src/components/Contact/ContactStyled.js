@@ -53,7 +53,7 @@ export const Desc = styled.div`
   }
 `;
 
-export const ContactForm = styled(Form)`
+export const ContactForm = styled.form`
   width: 95%;
   max-width: 600px;
   display: flex;
@@ -73,11 +73,30 @@ export const ContactTitle = styled.div`
   color: ${({ theme }) => theme.text_primary};
 `;
 
-export const ContactItem = styled(Form.Item)`
+export const ContactInput = styled.input`
+  flex: 1;
+  background-color: transparent;
+  border: 1px solid ${({ theme }) => theme.text_secondary};
+  outline: none;
+  font-size: 18px;
+  color: ${({ theme }) => theme.text_primary};
+  border-radius: 12px;
   margin-bottom: 4px;
+  padding: 12px 16px;
+  &:focus {
+    border: 1px solid ${({ theme }) => theme.primary};
+  }
+  &:hover {
+    border: 1px solid ${({ theme }) => theme.primary};
+  }
+
+  &::placeholder {
+    color: ${({ theme }) => theme.text_secondary};
+    font-family: "Poppins", sans-serif;
+  }
 `;
 
-export const ContactInput = styled(Input)`
+export const ContactInputMessage = styled.textarea`
   flex: 1;
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.text_secondary};
@@ -99,29 +118,7 @@ export const ContactInput = styled(Input)`
   }
 `;
 
-export const ContactInputMessage = styled(TextArea)`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-  &:hover {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-
-  &::placeholder {
-    color: ${({ theme }) => theme.text_secondary};
-    font-family: "Poppins", sans-serif;
-  }
-`;
-
-export const ContactButton = styled(Button)`
+export const ContactButton = styled.input`
   width: 100%;
   height: 45px;
   text-decoration: none;
