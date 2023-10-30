@@ -8,6 +8,9 @@ import brunel_thesis from "../images/education/brunel_thesis.png";
 import remedios_logo from "../images/remedios-yellow.png";
 import profile_logo from "../images/projects/profile.svg";
 import todoapp from "../images/projects/todoapp.png";
+import cryptocurrency_trading from "../images/projects/cryptocurrency-trading.png";
+import silent_ingredient from "../images/projects/silent-ingredient.png";
+import fyp from "../images/projects/final-year-project.png";
 
 export const Bio = {
   name: "Miguel Remédios",
@@ -257,7 +260,7 @@ export const projects = [
     date: "Sep 2022 - Aug 2023",
     description:
       "Cryptocurrencies have become a focal point of interest for investors and enthusiasts worldwide. Predicting their volatile prices is a challenge that can be addressed through machine learning. As part of my MSc in Advanced Computing at King's College London, I embarked on a research journey to develop a real-time and user-inputted cryptocurrency price prediction system using the Naive Bayes algorithm. This project is linked to a research study written for my thesis where further comparison with other machine learning models is performed to assess prediction performance.",
-    image: todoapp,
+    image: cryptocurrency_trading,
     tags: [
       "React.JS",
       "Python",
@@ -269,7 +272,7 @@ export const projects = [
       "Git",
       "Javascript",
       "Jupyter Notebook",
-      "Machine Learning Models",
+      "AI Models",
     ],
     category: "machine learning",
     github: "https://github.com/MiguelRemedios/cryptocurrency-trading",
@@ -282,7 +285,7 @@ export const projects = [
     date: "Sep 2021 - May 2022",
     description:
       "In today's interconnected world, ensuring the security of web applications and user data is paramount. This project represents a groundbreaking initiative conceived as my final year project for the Computer Science degree at Brunel University London. This project addresses the critical need for enhancing web application security through continuous authentication. Rather than relying solely on traditional, often vulnerable methods like usernames and passwords, this project pioneers the use of biometric behavioral patterns as a more robust and user-friendly authentication mechanism. A research study is associated with this project where more details are documented on how a Logistic Regression Machine Learning model is used to perform intrusion detection.",
-    image: todoapp,
+    image: fyp,
     tags: [
       "React.Js",
       "Python",
@@ -295,7 +298,7 @@ export const projects = [
       "MySQL",
       "NoSQL",
       "REST API",
-      "Machine Learning Model",
+      "AI Model",
     ],
     category: "machine learning",
     github: "https://github.com/rishavchanda/Podstream",
@@ -307,7 +310,7 @@ export const projects = [
     date: "Sep 2020 - Mar 2021",
     description:
       "The Silent Ingredient is a project based on a recipe search engine, the website simply allows people who have spare/left over ingredients in their household who do not know what to prepare with it. They can use the website to input the left over ingredients and instead of throwing the ingredients away, the website will be able to provide a recipe according to the users diet be it halal, vegan or vegetarian. We aim to work towards 4 Sustainable Development Goals (Zero Hunger, Good health and well being, Responsible consumption and prodution, Climate action) ",
-    image: todoapp,
+    image: silent_ingredient,
     tags: [
       "Java",
       "SpringBoot",
