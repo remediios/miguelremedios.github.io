@@ -10,7 +10,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact/Contact.js";
 
-import ProjectDetails from "./components/ProjectDetails";
+import ProjectDetails from "./components/ProjectDetails/ProjectDetails.jsx";
 import styled from "styled-components";
 import ExEduParent from "./components/ExEduParent/ExEduParent.js";
 import { ContextProvider } from "./context/ContextAPI.js";
@@ -55,7 +55,6 @@ function App() {
   // eslint-disable-next-line
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal);
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <ContextProvider>

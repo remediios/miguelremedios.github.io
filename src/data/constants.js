@@ -11,6 +11,7 @@ import todoapp from "../images/projects/todoapp.png";
 import cryptocurrency_trading from "../images/projects/cryptocurrency-trading.png";
 import silent_ingredient from "../images/projects/silent-ingredient.png";
 import fyp from "../images/projects/final-year-project.png";
+import blendr from "../images/projects/blendr.png";
 
 export const Bio = {
   name: "Miguel Remédios",
@@ -256,6 +257,28 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Blendr (Social Media App)",
+    date: "October 2023 - November 2023",
+    description:
+      "Blendr is a cutting-edge social networking web application designed to bring people together through the joy of image sharing. Developed using a modern tech stack, including TypeScript, ReactJS, Appwrite, Shadcn, Tailwind CSS, and React Query, Blendr offers users an exceptional platform to connect, express their creativity, and interact with like-minded individuals in a visually captivating way. Key Features: Image Upload and Sharing, Feed and Timeline, Engaging Interactions, User Profiles, Discover and Explore, Security and Privacy, Mobile Responsive. If you wish to test the application without signing-up or logging in, here are the credentials to use: email: janedoe@gmail.com // password: janedoe123.",
+    image: blendr,
+    tags: [
+      "React.JS",
+      "Typescript",
+      "Appwrite",
+      "TailwindCSS",
+      "ShadCN UI",
+      "React Query",
+      "Git",
+      "Javascript",
+      "CRUD Operations",
+    ],
+    category: "web app",
+    github: "https://github.com/MiguelRemedios/blendr",
+    webapp: "https://miguelremedios.pt",
+  },
+  {
+    id: 1,
     title: "Real-Time Cryptocurrency Price Prediction",
     date: "Sep 2022 - Aug 2023",
     description:
@@ -279,7 +302,7 @@ export const projects = [
     webapp: "https://miguelremedios.pt",
   },
   {
-    id: 1,
+    id: 2,
     title:
       "Behaviour-Based Biometrical Continuous Authentication in Web-Applications",
     date: "Sep 2021 - May 2022",
@@ -305,7 +328,7 @@ export const projects = [
     webapp: "https://miguelremedios.pt",
   },
   {
-    id: 2,
+    id: 3,
     title: "TheSilentIngredient",
     date: "Sep 2020 - Mar 2021",
     description:
@@ -365,7 +388,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Crypto-Eye",
     date: "Nov 2021 - Dec 2021",
     description:
@@ -384,7 +407,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "TODO List App",
     date: "Jun 2021 - Jun 2021",
     description:
