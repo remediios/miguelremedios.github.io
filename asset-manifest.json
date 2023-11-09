@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.bf538fe7.css",
-    "main.js": "/static/js/main.6bf38965.js",
+    "main.js": "/static/js/main.630b8d7b.js",
     "static/media/remedios-yellow.png": "/static/media/remedios-yellow.ea5451a588daf29dbf46.png",
+    "static/media/blendr.png": "/static/media/blendr.a6eb9908fae9135f88c2.png",
     "static/media/cryptocurrency-trading.png": "/static/media/cryptocurrency-trading.59352e046d35e805192d.png",
     "static/media/silent-ingredient.png": "/static/media/silent-ingredient.49ada39ec906e1959f80.png",
     "static/media/brunel_thesis.png": "/static/media/brunel_thesis.a321bd7e519143658457.png",
@@ -16,10 +17,10 @@
     "static/media/profile.svg": "/static/media/profile.b8428432db0267d9f94e70112e78d5e9.svg",
     "index.html": "/index.html",
     "main.bf538fe7.css.map": "/static/css/main.bf538fe7.css.map",
-    "main.6bf38965.js.map": "/static/js/main.6bf38965.js.map"
+    "main.630b8d7b.js.map": "/static/js/main.630b8d7b.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.6bf38965.js"
+    "static/js/main.630b8d7b.js"
   ]
 }
