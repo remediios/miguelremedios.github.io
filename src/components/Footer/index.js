@@ -1,6 +1,6 @@
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import { Bio } from "../../data/constants";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { Bio } from '../../data/constants';
 import {
   Copyright,
   FooterContainer,
@@ -10,7 +10,7 @@ import {
   NavLink,
   SocialMediaIcon,
   SocialMediaIcons,
-} from "./FooterStyled";
+} from './FooterStyled';
 
 function Footer() {
   return (
@@ -32,7 +32,7 @@ function Footer() {
             <LinkedInIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2023 Miguel Remédios. All rights reserved.</Copyright>
+        <Copyright>&copy; 2024 Miguel Remédios. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
