@@ -13,8 +13,8 @@ import {
   Span,
 } from './styled';
 import { biography } from '@/utils/data';
-import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 import { useGlobalContext } from '@/contexts/GlobalContext';
+import ModeSwitcher from './ModeSwitcher';
 
 const Navbar = ({
   darkMode,
@@ -57,21 +57,7 @@ const Navbar = ({
           <NavLink href="#projects">Projects</NavLink>
         </NavItems>
         <ButtonContainer>
-          {darkMode ? (
-            <BsSunFill
-              style={{ color: 'white', fontSize: '20px' }}
-              onClick={() => {
-                setDarkMode(false);
-              }}
-            />
-          ) : (
-            <BsMoonFill
-              style={{ color: 'black', fontSize: '20px' }}
-              onClick={() => {
-                setDarkMode(true);
-              }}
-            />
-          )}
+          <ModeSwitcher darkMode={darkMode} setDarkMode={setDarkMode} />
         </ButtonContainer>
 
         {isOpen && (
@@ -118,23 +104,7 @@ const Navbar = ({
             >
               Projects
             </MobileLink>
-            {darkMode ? (
-              <BsSunFill
-                style={{ color: 'white', fontSize: '20px', cursor: 'pointer' }}
-                onClick={() => {
-                  setDarkMode(false);
-                  setIsOpen(!isOpen);
-                }}
-              />
-            ) : (
-              <BsMoonFill
-                style={{ color: 'black', fontSize: '20px', cursor: 'pointer' }}
-                onClick={() => {
-                  setDarkMode(true);
-                  setIsOpen(!isOpen);
-                }}
-              />
-            )}
+            <ModeSwitcher darkMode={darkMode} setDarkMode={setDarkMode} />
           </MobileMenu>
         )}
       </NavbarContainer>

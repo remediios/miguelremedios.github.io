@@ -8,7 +8,7 @@ interface GlobalContextProps {
 const GlobalContext = createContext<GlobalContextProps | undefined>(undefined);
 
 const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [isEnabled, setIsEnabled] = useState(false);
+  const [isEnabled, setIsEnabled] = useState(true);
 
   const contextValue: GlobalContextProps = {
     isEnabled,
