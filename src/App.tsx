@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 
 import Navbar from './components/navbar';
 import { darkTheme, lightTheme } from './utils/themes';
+import { GlobalProvider } from './contexts/GlobalContext';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -11,7 +12,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <GlobalProvider>
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      </GlobalProvider>
     </ThemeProvider>
   );
 }

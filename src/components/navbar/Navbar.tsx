@@ -14,6 +14,7 @@ import {
 } from './styled';
 import { biography } from '@/utils/data';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
+import { useGlobalContext } from '@/contexts/GlobalContext';
 
 const Navbar = ({
   darkMode,
@@ -23,6 +24,7 @@ const Navbar = ({
   setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { setIsEnabled } = useGlobalContext();
 
   return (
     <Nav>
@@ -38,17 +40,17 @@ const Navbar = ({
           <NavLink href="#skills">Skills</NavLink>
           <NavLink
             href="#experience"
-            // onClick={() => {
-            //   setEnabled(true);
-            // }}
+            onClick={() => {
+              setIsEnabled(true);
+            }}
           >
             Experience
           </NavLink>
           <NavLink
             href="#education"
-            // onClick={() => {
-            //   setEnabled(false);
-            // }}
+            onClick={() => {
+              setIsEnabled(false);
+            }}
           >
             Education
           </NavLink>
@@ -94,7 +96,7 @@ const Navbar = ({
               href="#experience"
               onClick={() => {
                 setIsOpen(!isOpen);
-                // setEnabled(true);
+                setIsEnabled(true);
               }}
             >
               Experience
@@ -103,7 +105,7 @@ const Navbar = ({
               href="#education"
               onClick={() => {
                 setIsOpen(!isOpen);
-                // setEnabled(false);
+                setIsEnabled(false);
               }}
             >
               Education
