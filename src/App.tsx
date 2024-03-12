@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
+
 import Navbar from './components/navbar';
-import { Button } from './components/ui/button';
 import { darkTheme, lightTheme } from './utils/themes';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const [openModal, setOpenModal] = useState({ state: false, project: null });
+  const theme = darkMode ? darkTheme : lightTheme;
+  console.log(theme);
+
   return (
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+    <ThemeProvider theme={theme}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Button>Click me</Button>
     </ThemeProvider>
   );
 }
