@@ -4,17 +4,12 @@ import styled, { ThemeProvider } from 'styled-components';
 import Navbar from './components/navbar';
 import { darkTheme, lightTheme } from './utils/themes';
 import { GlobalProvider } from './contexts/GlobalContext';
+import Hero from './components/hero';
 
-export const NavLink = styled.a`
-  color: ${({ theme }) => theme.text_primary};
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
-  &:hover {
-    background-color: #0056b3;
-  }
+const Body = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+  width: 100%;
+  overflow-x: hidden;
 `;
 
 function App() {
@@ -26,7 +21,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalProvider>
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <NavLink>test</NavLink>
+        <Body>
+          <Hero />
+        </Body>
       </GlobalProvider>
     </ThemeProvider>
   );

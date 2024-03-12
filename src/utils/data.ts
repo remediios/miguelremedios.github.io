@@ -6,7 +6,7 @@ export const biography = {
     'Full Stack Developer',
   ],
   description:
-    'I am a software engineer with expertise in machine learning. I thrive on solving complex problems and excel in collaborative environments. My passion for learning and problem-solving drives my commitment to delivering exceptional results.',
+    'I am a software engineer, with a passion in both machine learning and full-stack development. I specialize in tackling intricate challenges and thrive in collaborative settings. My dedication to continuous learning and problem-solving fuels my drive to deliver results across various domains.',
   github: 'https://github.com/remediios',
   resume: '',
   linkedin: 'https://www.linkedin.com/in/miguelremediioss/',
