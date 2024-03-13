@@ -1,3 +1,5 @@
+import { skillImages } from '@/utils/images';
+
 export const biography = {
   name: 'Miguel Remédios',
   roles: [
@@ -21,42 +23,47 @@ export const skills = [
     skills: [
       {
         name: 'JavaScript',
-        image:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png',
+        image: skillImages.javascript,
       },
       {
         name: 'TypeScript',
-        image: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png',
+        image: skillImages.typescript,
       },
       {
         name: 'React',
-        image:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png',
+        image: skillImages.react,
       },
       {
         name: 'NextJS',
-        image:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png',
+        image: skillImages.nextJs,
       },
       {
         name: 'Redux',
-        image: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png',
+        image: skillImages.redux,
       },
       {
         name: 'HTML',
-        image: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png',
+        image: skillImages.html,
       },
       {
         name: 'CSS',
-        image: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png',
+        image: skillImages.css,
       },
       {
         name: 'TailwindCSS',
-        image: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png',
+        image: skillImages.tailwindcss,
       },
       {
         name: 'Styled-Components',
-        image: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png',
+        image: skillImages.styledComponents,
+      },
+      {
+        name: 'AntD',
+        image: skillImages.antd,
+      },
+      {
+        name: 'Material UI',
+        image: skillImages.mui,
       },
     ],
   },
