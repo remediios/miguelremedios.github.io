@@ -23,47 +23,47 @@ export const skills = [
     skills: [
       {
         name: 'JavaScript',
-        image: skillImages.javascript,
+        image: skillImages.frontEnd.javascript,
       },
       {
         name: 'TypeScript',
-        image: skillImages.typescript,
+        image: skillImages.frontEnd.typescript,
       },
       {
         name: 'React',
-        image: skillImages.react,
+        image: skillImages.frontEnd.react,
       },
       {
         name: 'NextJS',
-        image: skillImages.nextJs,
+        image: skillImages.frontEnd.nextJs,
       },
       {
         name: 'Redux',
-        image: skillImages.redux,
+        image: skillImages.frontEnd.redux,
       },
       {
         name: 'HTML',
-        image: skillImages.html,
+        image: skillImages.frontEnd.html,
       },
       {
         name: 'CSS',
-        image: skillImages.css,
+        image: skillImages.frontEnd.css,
       },
       {
         name: 'TailwindCSS',
-        image: skillImages.tailwindcss,
+        image: skillImages.frontEnd.tailwindcss,
       },
       {
         name: 'Styled-Components',
-        image: skillImages.styledComponents,
+        image: skillImages.frontEnd.styledComponents,
       },
       {
         name: 'AntD',
-        image: skillImages.antd,
+        image: skillImages.frontEnd.antd,
       },
       {
         name: 'Material UI',
-        image: skillImages.mui,
+        image: skillImages.frontEnd.mui,
       },
     ],
   },
@@ -72,58 +72,51 @@ export const skills = [
     skills: [
       {
         name: 'NodeJS',
-        image: 'https://nodejs.org/static/images/logo.svg',
+        image: skillImages.backEnd.nodejs,
       },
       {
         name: 'Python',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
+        image: skillImages.backEnd.python,
       },
       {
         name: 'Java',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg',
+        image: skillImages.backEnd.java,
       },
       {
         name: 'ExpressJS',
-        image:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png',
+        image: skillImages.backEnd.expressJS,
       },
       {
         name: 'Fastify',
-        image:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png',
+        image: skillImages.backEnd.fastify,
       },
       {
         name: 'Spring',
-        image: 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg',
+        image: skillImages.backEnd.spring,
       },
       {
         name: 'MySQL',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
+        image: skillImages.backEnd.mysql,
       },
       {
         name: 'PostgreSQL',
-        image: 'https://www.postgresql.org/media/img/about/press/elephant.png',
+        image: skillImages.backEnd.postgresql,
       },
       {
         name: 'MongoDB',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
+        image: skillImages.backEnd.mongodb,
       },
       {
         name: 'Redis',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
+        image: skillImages.backEnd.redis,
       },
       {
         name: 'Firebase',
-        image: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
+        image: skillImages.backEnd.firebase,
       },
       {
         name: 'Supabase',
-        image: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
+        image: skillImages.backEnd.supabase,
       },
     ],
   },
@@ -132,35 +125,31 @@ export const skills = [
     skills: [
       {
         name: 'Python',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
+        image: skillImages.machineLearning.python,
       },
       {
         name: 'R',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
+        image: skillImages.machineLearning.r,
       },
       {
         name: 'Matlab',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
+        image: skillImages.machineLearning.matlab,
       },
       {
         name: 'TensorFlow',
-        image:
-          'https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg',
+        image: skillImages.machineLearning.tensorflow,
       },
       {
         name: 'PyTorch',
-        image: 'https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg',
+        image: skillImages.machineLearning.pytorch,
       },
       {
         name: 'Scikit-Learn',
-        image: '',
+        image: skillImages.machineLearning.scikitLearn,
       },
       {
         name: 'Pandas',
-        image: '',
+        image: skillImages.machineLearning.pandas,
       },
     ],
   },
@@ -169,44 +158,39 @@ export const skills = [
     skills: [
       {
         name: 'Git',
-        image:
-          'https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667',
+        image: skillImages.tools.git,
       },
       {
         name: 'GitHub',
-        image:
-          'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+        image: skillImages.tools.github,
       },
       {
         name: 'Docker',
-        image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
+        image: skillImages.tools.docker,
       },
       {
         name: 'AWS',
-        image: '',
+        image: skillImages.tools.aws,
       },
       {
         name: 'GCP',
-        image: '',
+        image: skillImages.tools.gcp,
       },
       {
         name: 'Azure',
-        image: '',
+        image: skillImages.tools.azure,
       },
       {
         name: 'Vercel',
-        image: '',
+        image: skillImages.tools.vercel,
       },
       {
         name: 'Postman',
-        image:
-          'https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667',
+        image: skillImages.tools.postman,
       },
       {
         name: 'Insomnia',
-        image:
-          'https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667',
+        image: skillImages.tools.insomnia,
       },
     ],
   },
