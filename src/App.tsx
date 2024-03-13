@@ -6,6 +6,7 @@ import { darkTheme, lightTheme } from './utils/themes';
 import { GlobalProvider } from './contexts/GlobalContext';
 import Hero from './components/hero';
 import Skills from './components/skills';
+import Career from './components/career';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -42,6 +43,7 @@ function App() {
           <Wrapper>
             <Skills />
           </Wrapper>
+          <Career />
         </Body>
       </GlobalProvider>
     </ThemeProvider>
