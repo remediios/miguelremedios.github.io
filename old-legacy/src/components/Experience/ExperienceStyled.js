@@ -68,6 +68,7 @@ export const TimelineDotStyled = styled(TimelineDot)`
   &.MuiTimelineDot-filled {
     background-color: ${({ theme }) => theme.timeline_dots};
     color: ${({ theme }) => theme.timeline_dots};
+  }
 `;
 
 export const TitleDiv = styled.div`

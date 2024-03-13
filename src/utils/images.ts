@@ -44,6 +44,10 @@ import vercel from '@/images/skills/tools/vercel.svg';
 import postman from '@/images/skills/tools/postman.svg';
 import insomnia from '@/images/skills/tools/insomnia.svg';
 
+//Experience
+import elecctro from '@/images/experience/elecctro_logo.jpeg';
+import tvremedios from '@/images/experience/tvremedios_logo.jpg';
+
 export const skillImages = {
   frontEnd: {
     javascript,
@@ -92,4 +96,9 @@ export const skillImages = {
     postman,
     insomnia,
   },
+};
+
+export const experience = {
+  elecctro,
+  tvremedios,
 };

@@ -32,7 +32,6 @@ const Wrapper = styled.div`
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const theme = darkMode ? darkTheme : lightTheme;
-  console.log(theme);
 
   return (
     <ThemeProvider theme={theme}>

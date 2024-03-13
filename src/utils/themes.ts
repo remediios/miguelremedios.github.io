@@ -47,7 +47,7 @@ export const lightTheme = {
   primary: '#E3C400',
   text_primary: '#111111',
   text_secondary: '#48494a',
-  card: '#FFF',
+  card: '#f0f0f0',
   card_light: '#F8F8F8',
   button: '#5c5b5b',
   white: '#FFFFFF',

@@ -1,4 +1,4 @@
-import { skillImages } from '@/utils/images';
+import { skillImages, experience } from '@/utils/images';
 
 export const biography = {
   name: 'Miguel Remédios',
@@ -193,5 +193,43 @@ export const skills = [
         image: skillImages.tools.insomnia,
       },
     ],
+  },
+];
+
+export const experiences = [
+  {
+    id: 0,
+    img: experience.elecctro,
+    role: 'Software Engineer Intern',
+    company: 'Elecctro',
+    date: 'June 2022 - August 2022',
+    desc: "Developing a client dashboard for the company's vending machines application interface. Ensured clean code practices and refactored te previous legacy and outdated code for the company's dashboard. Worked with several departments to combine the progress of all into a full-stack application to deliver pertinent statistical information for the client.",
+    skills: [
+      'JavaScript',
+      'TypeScript',
+      'React JS',
+      'AWS',
+      'REST API',
+      'Context API',
+      'Node Js',
+      'Git',
+      'YouTrack',
+      'Agile Development',
+    ],
+    doc: '',
+  },
+  {
+    id: 1,
+    img: experience.tvremedios,
+    role: 'IT Assistant',
+    company: 'TvRemédios Reparações',
+    date: 'June 2017 - August 2019',
+    desc: 'Installed and configured software and hardware in several client devices. In addition, troubleshooted client’s hardware problems and either repaired or replaced them. Configured hardware, devices and software to set up work stations for the different enterprise employees.',
+    skills: [
+      'Malware removal',
+      'Hardware installation and replacement',
+      "Workstation's setup",
+    ],
+    doc: '',
   },
 ];
