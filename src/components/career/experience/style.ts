@@ -1,4 +1,3 @@
-import { ArrowRight } from 'lucide-react';
 import { HiOutlineAcademicCap } from 'react-icons/hi';
 import styled from 'styled-components';
 
