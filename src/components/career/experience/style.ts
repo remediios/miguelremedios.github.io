@@ -48,7 +48,7 @@ export const SymbolWrapper = styled.div`
 
 export const AnimatedArrow = styled.div`
   position: relative;
-  margin: 0 30px 0 30px;
+  margin: 0 40px 0 25px;
   transform: translate(-50%, -50%);
   transform: rotate(270deg);
 
