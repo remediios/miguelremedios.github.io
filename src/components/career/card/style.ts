@@ -141,3 +141,72 @@ export const Skill = styled.div`
     font-size: 12px;
   }
 `;
+
+/*
+ ********************************
+ *
+ * Education Card Additional Files
+ *
+ ********************************
+ */
+
+export const EducationImage = styled.img`
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 4px;
+  @media only screen and (max-width: 768px) {
+    height: 40px;
+  }
+`;
+
+export const Name = styled.div`
+  font-size: 18px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_primary + 99};
+
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+`;
+
+export const Degree = styled.div`
+  font-size: 14px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_secondary + 99};
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+
+export const Grade = styled.div`
+  font-size: 14px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_secondary + 99};
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+
+export const Thesis = styled.div`
+  font-size: 15px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 99};
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+
+export const ThesisTopic = styled.div`
+  font-size: 15px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 99};
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;

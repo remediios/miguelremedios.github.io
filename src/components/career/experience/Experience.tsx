@@ -19,7 +19,7 @@ import {
   TimelineSeparator,
 } from '@mui/lab';
 import { experiences } from '@/utils/data';
-import ExperienceCard from './card/ExperienceCard';
+import ExperienceCard from '../card/ExperienceCard';
 
 const Experience = () => {
   const { setIsEnabled } = useGlobalContext();

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
 import { TimelineDot } from '@mui/lab';
-import { HiOutlineAcademicCap } from 'react-icons/hi';
+import { MdOutlineWorkOutline } from 'react-icons/md';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -48,8 +48,7 @@ export const SymbolWrapper = styled.div`
 
 export const AnimatedArrow = styled.div`
   position: relative;
-
-  margin: 0 42px 0 25px;
+  margin: 0 50px 0 25px;
   transform: translate(-50%, -50%);
   transform: rotate(270deg);
 
@@ -87,7 +86,7 @@ export const AnimatedArrow = styled.div`
   }
 `;
 
-export const EducationIcon = styled(HiOutlineAcademicCap)`
+export const ExperienceIcon = styled(MdOutlineWorkOutline)`
   font-size: 32px;
   color: ${({ theme }) => theme.timeline_dots};
   margin-top: 8px;

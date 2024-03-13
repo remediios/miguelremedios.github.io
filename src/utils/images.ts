@@ -48,6 +48,13 @@ import insomnia from '@/images/skills/tools/insomnia.svg';
 import elecctro from '@/images/experience/elecctro_logo.jpeg';
 import tvremedios from '@/images/experience/tvremedios_logo.jpg';
 
+//Education
+import kcl from '@/images/education/kcl.svg';
+import kcl_thesis from '@/images/education/kcl_thesis.png';
+import brunel from '@/images/education/brunel.svg';
+import brunel_thesis from '@/images/education/brunel_thesis.png';
+import extp from '@/images/education/extp.jpg';
+
 export const skillImages = {
   frontEnd: {
     javascript,
@@ -101,4 +108,19 @@ export const skillImages = {
 export const experience = {
   elecctro,
   tvremedios,
+};
+
+export const education = {
+  masters: {
+    img: kcl,
+    doc: kcl_thesis,
+  },
+  bachelors: {
+    img: brunel,
+    doc: brunel_thesis,
+  },
+  highSchool: {
+    img: extp,
+    doc: '',
+  },
 };

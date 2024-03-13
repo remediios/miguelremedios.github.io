@@ -1,4 +1,8 @@
-import { skillImages, experience } from '@/utils/images';
+import {
+  skillImages,
+  experience,
+  education as educationImages,
+} from '@/utils/images';
 
 export const biography = {
   name: 'Miguel Remédios',
@@ -231,5 +235,45 @@ export const experiences = [
       "Workstation's setup",
     ],
     doc: '',
+  },
+];
+
+export const education = [
+  {
+    id: 0,
+    img: educationImages.masters.img,
+    school: "King's College London",
+    date: 'Sep 2022 - Sep 2023',
+    grade: 'Pass with Merit',
+    desc: "Studied an intensive year of Advanced Computing at King's College London for my Master's degree. Throughout the course, several important modules were studied from artificial intelligence to cybersecurity and software engineering subjects. A dissertation was written on the topic evidenced covering all insights and experience gained throughout the year and much more personal development.",
+    degree: 'MSc Advanced Computing',
+    thesis: [
+      'Applying Machine Learning Naïve Bayes for Real-Time Cryptocurrency Price Prediction: An Empirical Study',
+    ],
+    doc: educationImages.masters.doc,
+  },
+  {
+    id: 1,
+    img: educationImages.bachelors.img,
+    school: 'Brunel University London',
+    date: 'Sep 2019 - Jun 2022',
+    grade: '1st Class Honours (1:1)',
+    desc: "Studied 3 years of Computer Science in this university for my Bachelor's degree, achieving a 1st Class Honours grade. This degree covered all important state-of-the-art topics from fundamentals to cybersecurity, software engineering and artificial intelligence. My specialisation with this degree is Software Engineering and a dissertation on the topic was written, achieving an A grade by the end.",
+    degree: 'BSc (Hons) Computer Science (Software Engineering)',
+    thesis: [
+      'Behaviour-Based Biometrical Continuous Authentication in Web Applications',
+    ],
+    doc: educationImages.bachelors.doc,
+  },
+  {
+    id: 2,
+    img: educationImages.highSchool.img,
+    school: 'Externato de Penafirme',
+    date: 'Sep 2017 - Jun 2019',
+    grade: '14/20',
+    desc: 'Completed 3 years of Sciences and Technology degree at the high school.',
+    degree: 'Sciences and Technology',
+    thesis: '',
+    doc: educationImages.highSchool.doc,
   },
 ];
