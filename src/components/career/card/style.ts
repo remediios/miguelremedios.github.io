@@ -68,7 +68,7 @@ export const Card = styled.div`
     -webkit-line-clamp: unset;
   }
 
-  border: 0.1px solid #e3c400;
+  border: 0.1px solid ${({ theme }) => theme.primary};
   box-shadow: rgba(255, 223, 135, 0.15) 0px 4px 24px;
 `;
 
