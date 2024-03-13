@@ -44,14 +44,21 @@ export const SymbolWrapper = styled.div`
   margin-left: 100px;
   color: ${({ theme }) => theme.text_primary};
   margin: 15px 15px 0px;
+
+  @media (max-width: 768px) {
+    margin: 1px 0 0 0;
+  }
 `;
 
 export const AnimatedArrow = styled.div`
   position: relative;
-
-  margin: 0 42px 0 25px;
+  margin: 0 32px 0 25px;
   transform: translate(-50%, -50%);
   transform: rotate(270deg);
+
+  @media (max-width: 768px) {
+    margin: 0 36px 3px 46px;
+  }
 
   span {
     display: block;
@@ -103,6 +110,11 @@ export const Desc = styled.div`
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 16px;
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 4px;
+    font-size: 14px;
   }
 `;
 

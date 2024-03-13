@@ -48,6 +48,10 @@ export const Description = styled.div`
   @media (max-width: 768px) {
     font-size: 16px;
   }
+
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
 `;
 
 export const SkillsContainer = styled.div`
