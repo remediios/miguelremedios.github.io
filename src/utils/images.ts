@@ -56,10 +56,18 @@ import brunel_thesis from '@/images/education/brunel_thesis.png';
 import extp from '@/images/education/extp.jpg';
 
 //Projects
+//Images
 import blendr from '@/images/projects/blendr.png';
 import vista from '@/images/projects/vista.png';
 import fastifyAPI from '@/images/projects/fastify-prisma-rest-api.png';
+import expressAPI from '@/images/projects/express-rest-api.png';
 import pomodoro from '@/images/projects/pomodoro.gif';
+import cryptoTrading from '@/images/projects/cryptocurrency-trading.png';
+import fyp from '@/images/projects/final-year-project.png';
+import silentIngredient from '@/images/projects/silent-ingredient.png';
+//User Images
+import remediosLogo from '@/images/remedios-yellow.png';
+import profileLogo from '@/images/projects/profile.svg';
 
 export const skillImages = {
   frontEnd: {
@@ -132,8 +140,15 @@ export const education = {
 };
 
 export const projectsImages = {
-  vista,
-  blendr,
-  fastifyAPI,
-  pomodoro,
+  usersImg: { remediosLogo, profileLogo },
+  projectsImg: {
+    vista,
+    blendr,
+    fastifyAPI,
+    expressAPI,
+    pomodoro,
+    cryptoTrading,
+    fyp,
+    silentIngredient,
+  },
 };

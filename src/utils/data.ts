@@ -286,7 +286,7 @@ export const projects = [
     date: 'February 2024 - March 2024',
     description:
       'VISTA is a comprehensive home rental booking system application built using NextJS, Supabase, Prisma, Kinde, ShadcnUI, and TailwindCSS. This application aims to streamline the process of booking rental homes by providing a user-friendly interface and robust backend.',
-    image: projectsImages.vista,
+    image: projectsImages.projectsImg.vista,
     tags: [
       'NextJS',
       'Typescript',
@@ -307,7 +307,7 @@ export const projects = [
     date: 'October 2023 - November 2023',
     description:
       'Blendr is a cutting-edge social network web application designed to bring people together through the joy of image sharing. Developed using a modern tech stack, including TypeScript, ReactJS, Appwrite, Shadcn, Tailwind CSS, and React Query, Blendr offers users an exceptional platform to connect, express their creativity, and interact with like-minded individuals in a visually captivating way. Key Features: Image Upload and Sharing, Feed and Timeline, Engaging Interactions, User Profiles, Discover and Explore, Security and Privacy, Mobile Responsive. If you wish to test the application without signing-up or logging in, here are the credentials to use: email: janedoe@gmail.com // password: janedoe123.',
-    image: projectsImages.blendr,
+    image: projectsImages.projectsImg.blendr,
     tags: [
       'React.JS',
       'Typescript',
@@ -324,11 +324,33 @@ export const projects = [
   },
   {
     id: 2,
+    title: 'Real-Time Cryptocurrency Price Prediction',
+    date: 'Sep 2022 - Aug 2023',
+    description:
+      "Cryptocurrencies have become a focal point of interest for investors and enthusiasts worldwide. Predicting their volatile prices is a challenge that can be addressed through machine learning. As part of my MSc in Advanced Computing at King's College London, I embarked on a research journey to develop a real-time and user-inputted cryptocurrency price prediction system using the Naive Bayes algorithm. This project is linked to a research study written for my thesis where further comparison with other machine learning models is performed to assess prediction performance.",
+    image: projectsImages.projectsImg.cryptoTrading,
+    tags: [
+      'JavaScript',
+      'React',
+      'Python',
+      'Jupyter Notebook',
+      'ExpressJS',
+      'Flask',
+      'Scikit-learn',
+      'PostgreSQL',
+      'AI Models',
+    ],
+    category: 'machineLearning',
+    github: 'https://github.com/remediios/cryptocurrency-trading',
+    demo: '',
+  },
+  {
+    id: 3,
     title: 'Fastify Prisma REST API',
     date: 'March 2024',
     description:
       'This project is a boilerplate codebase for building a RESTful API using Fastify, Prisma, Zod, and TypeScript. This project includes user and product management endpoints, authentication, request and response validation, and Swagger documentation.',
-    image: projectsImages.fastifyAPI,
+    image: projectsImages.projectsImg.fastifyAPI,
     tags: [
       'Fastify',
       'Typescript',
@@ -346,12 +368,62 @@ export const projects = [
     demo: '',
   },
   {
-    id: 3,
+    id: 4,
+    title:
+      'Behaviour-Based Biometrical Continuous Authentication in Web-Applications',
+    date: 'Sep 2021 - May 2022',
+    description:
+      "In today's interconnected world, ensuring the security of web applications and user data is paramount. This project represents a groundbreaking initiative conceived as my final year project for the Computer Science degree at Brunel University London. This project addresses the critical need for enhancing web application security through continuous authentication. Rather than relying solely on traditional, often vulnerable methods like usernames and passwords, this project pioneers the use of biometric behavioral patterns as a more robust and user-friendly authentication mechanism. A research study is associated with this project where more details are documented on how a Logistic Regression Machine Learning model is used to perform intrusion detection.",
+    image: projectsImages.projectsImg.fyp,
+    tags: [
+      'Java',
+      'Python',
+      'JavaScript',
+      'React',
+      'Spring Boot',
+      'Flask',
+      'Git',
+      'Firebase',
+      'MySQL',
+      'NoSQL',
+      'REST API',
+      'AI Model',
+    ],
+    category: 'machineLearning',
+    github: 'https://github.com/remediios/final-year-project',
+    demo: '',
+  },
+  {
+    id: 5,
+    title: 'School System REST API',
+    date: 'March 2024',
+    description:
+      ' This project is a REST API tailored for school system management. Leveraging ExpressJS, MariaDB, and Node, it facilitates student and user management, photo storage, and secure authentication. With features like database integration via Sequelize, file uploads with Multer, and deployment on Google Cloud Platform Virtual Machine using Docker, it offers a robust, scalable, and reliable solution for schools. Powered by modern technologies, it streamlines administrative tasks, ensuring efficiency and security in school operations.',
+    image: projectsImages.projectsImg.expressAPI,
+    tags: [
+      'JavaScript',
+      'ExpressJS',
+      'MariaDB',
+      'NodeJS',
+      'Sequelize ORM',
+      'JWT Auth',
+      'Google Cloud Platform VPS',
+      'Docker',
+      'PM2',
+      'Nginx',
+      'Insomnia',
+    ],
+    category: 'api',
+    github: 'https://github.com/remediios/school-rest-api',
+    demo: '',
+  },
+  {
+    id: 6,
     title: 'Pomodoro App',
     date: 'February 2024',
     description:
       'This is a Pomodoro Timer application built with React, designed to help users manage their time effectively using the Pomodoro Technique. The Pomodoro Technique is a time management method that uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks of 5 minutes and a longer break of 15 minutes every 4 pomodoros (forming a corresponding cycle).',
-    image: projectsImages.pomodoro,
+    image: projectsImages.projectsImg.pomodoro,
     tags: [
       'Typescript',
       'React',
