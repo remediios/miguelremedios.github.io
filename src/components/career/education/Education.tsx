@@ -48,8 +48,10 @@ const Education = () => {
                 </TimelineContent>
                 <TimelineSeparator>
                   <TimelineDotStyled variant="filled" color="warning" />
-                  {index !== education.length && (
-                    <TimelineConnector style={{ background: '#E3C400' }} />
+                  {index !== education.length - 1 && (
+                    <>
+                      <TimelineConnector style={{ background: '#E3C400' }} />
+                    </>
                   )}
                 </TimelineSeparator>
               </TimelineItem>
