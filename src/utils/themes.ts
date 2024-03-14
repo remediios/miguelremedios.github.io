@@ -43,7 +43,7 @@ export const darkTheme = {
 
 export const lightTheme = {
   bg: '#FFFFFF',
-  bgLight: '#f0f0f0',
+  bgLight: '#dfdfdf',
   primary: '#E3C400',
   text_primary: '#111111',
   text_secondary: '#48494a',

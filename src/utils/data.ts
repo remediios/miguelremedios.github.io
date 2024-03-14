@@ -321,6 +321,6 @@ export const projects = [
     ],
     category: 'webApp',
     github: 'https://github.com/remediios/blendr',
-    demo: 'https://miguelremedios.pt',
+    demo: '',
   },
 ];

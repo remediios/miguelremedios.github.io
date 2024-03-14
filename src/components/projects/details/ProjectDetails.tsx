@@ -82,12 +82,25 @@ const ProjectDetails = () => {
               </>
             )}
             <ButtonGroup>
-              <Button $dull href={project?.github} target="new">
-                View Source Code
-              </Button>
-              <Button href={project?.demo} target="new">
-                View Demo
-              </Button>
+              {project?.demo !== '' ? (
+                <>
+                  <Button $dull href={project?.github} target="_blank">
+                    View Source Code
+                  </Button>
+                  <Button href={project?.demo} target="_blank">
+                    View Demo
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button href={project?.github} target="_blank">
+                    View Source Code
+                  </Button>
+                  <Button $disabled href={project?.demo} target="_blank">
+                    Demo Not Available
+                  </Button>
+                </>
+              )}
             </ButtonGroup>
           </Wrapper>
         </Container>

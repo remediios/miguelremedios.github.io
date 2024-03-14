@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface IButton {
   $dull?: boolean;
+  $disabled?: boolean;
 }
 
 export const Container = styled.div`
@@ -36,11 +37,15 @@ export const Title = styled.div`
   font-size: 28px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
-  margin: 8px 6px 0px 6px;
+  margin: 12px 6px 0px 6px;
 
   @media only screen and (max-width: 600px) {
     font-size: 24px;
-    margin: 6px 6px 0px 6px;
+    margin: 12px 6px 0px 6px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 20px;
   }
 `;
 
@@ -169,6 +174,10 @@ export const Button = styled.a<IButton>`
   padding: 12px 16px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.primary};
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease;
+
   ${({ $dull, theme }) =>
     $dull &&
     `
@@ -176,13 +185,22 @@ export const Button = styled.a<IButton>`
       color: ${theme.text_secondary};
 
       &:hover {
-          background-color: ${theme.bg};
+        color: ${theme.text_primary};
+          background-color: ${theme.bg + 99};
       }
   `}
 
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.5s ease;
+  ${({ $disabled, theme }) =>
+    $disabled &&
+    `
+      pointer-events: none;
+      color: ${theme.text_secondary};
+      cursor: not-allowed;
+      background-color: ${theme.bgLight};
+      &:hover {
+        background-color: ${theme.bg}; /* Adjust as needed */
+      }
+    `}
 
   &:hover {
     background-color: ${({ theme }) => theme.primary + 99};
