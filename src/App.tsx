@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
-import Navbar from './components/navbar';
 import { darkTheme, lightTheme } from './utils/themes';
 import { GlobalProvider } from './contexts/GlobalContext';
+import { ProjectsProvider } from './contexts/ProjectsContext';
+import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Skills from './components/skills';
 import Career from './components/career';
 import Projects from './components/projects';
-import { ProjectsProvider } from './contexts/ProjectsContext';
+import Contact from './components/contact';
+import Footer from './components/footer';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -65,6 +67,10 @@ function App() {
               <Projects />
             </ProjectsProvider>
           </WrapperProjects>
+          <Wrapper>
+            <Contact />
+          </Wrapper>
+          <Footer />
         </Body>
       </GlobalProvider>
     </ThemeProvider>
