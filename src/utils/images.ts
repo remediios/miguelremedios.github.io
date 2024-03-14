@@ -58,6 +58,8 @@ import extp from '@/images/education/extp.jpg';
 //Projects
 import blendr from '@/images/projects/blendr.png';
 import vista from '@/images/projects/vista.png';
+import fastifyAPI from '@/images/projects/fastify-prisma-rest-api.png';
+import pomodoro from '@/images/projects/pomodoro.gif';
 
 export const skillImages = {
   frontEnd: {
@@ -132,4 +134,6 @@ export const education = {
 export const projectsImages = {
   vista,
   blendr,
+  fastifyAPI,
+  pomodoro,
 };
