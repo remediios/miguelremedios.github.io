@@ -12,7 +12,7 @@ type OpenModalType = {
   project: ProjectProps | null;
 };
 
-//Interface also used inside ProjectCard
+//Interface also used inside ProjectCard and ProjectDetails
 export interface ProjectProps {
   id: number;
   title: string;
