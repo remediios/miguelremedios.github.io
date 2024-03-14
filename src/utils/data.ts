@@ -208,7 +208,7 @@ export const experiences = [
     role: 'Software Engineer Intern',
     company: 'Elecctro',
     date: 'June 2022 - August 2022',
-    desc: "Developing a client dashboard for the company's vending machines application interface. Ensured clean code practices and refactored te previous legacy and outdated code for the company's dashboard. Worked with several departments to combine the progress of all into a full-stack application to deliver pertinent statistical information for the client.",
+    desc: "Drove significant improvements in the company's software infrastructure. I developed a robust client dashboard using JavaScript and Typescript, with React, replacing Redux with React Hooks and Context API for enhanced performance. Additionally, I refactored legacy code in the dashboard, improving maintainability and system performance while updating documentation for clarity. I also coordinated cross-departmental collaboration for a unified full-stack app, leveraging Tanstack Query for efficient API integration, resulting in a seamless user experience. Leading the full-stack app delivery, I utilized AWS CodeCommit for version control and YouTrack for project management, ensuring successful project outcomes.",
     skills: [
       'JavaScript',
       'TypeScript',
