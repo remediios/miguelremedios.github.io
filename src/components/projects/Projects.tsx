@@ -1,9 +1,14 @@
 import { useState } from 'react';
-import { Container, Desc, Title, Wrapper } from './style';
+import { CardContainer, Container, Desc, Title, Wrapper } from './style';
 import TagSelector from './TagSelector';
+import { projects } from '@/utils/data';
+import ProjectCard from './card/ProjectCard';
+import { useProjectsContext } from '@/contexts/ProjectsContext';
+import ProjectDetails from './details/ProjectDetails';
 
 const Projects = () => {
   const [toggle, setToggle] = useState('all');
+  const { openModal } = useProjectsContext();
   return (
     <Container id="projects">
       <Wrapper>
@@ -13,6 +18,18 @@ const Projects = () => {
           Here is an overview of my projects.
         </Desc>
         <TagSelector toggle={toggle} setToggle={setToggle} />
+        <CardContainer>
+          {toggle === 'all' &&
+            projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          {projects
+            .filter((item) => item.category === toggle)
+            .map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+        </CardContainer>
+        {openModal.state && <ProjectDetails />}
       </Wrapper>
     </Container>
   );

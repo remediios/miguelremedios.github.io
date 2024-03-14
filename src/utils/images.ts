@@ -55,6 +55,10 @@ import brunel from '@/images/education/brunel.svg';
 import brunel_thesis from '@/images/education/brunel_thesis.png';
 import extp from '@/images/education/extp.jpg';
 
+//Projects
+import blendr from '@/images/projects/blendr.png';
+import vista from '@/images/projects/vista.png';
+
 export const skillImages = {
   frontEnd: {
     javascript,
@@ -123,4 +127,9 @@ export const education = {
     img: extp,
     doc: '',
   },
+};
+
+export const projectsImages = {
+  vista,
+  blendr,
 };

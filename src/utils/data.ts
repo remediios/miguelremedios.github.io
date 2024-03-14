@@ -2,6 +2,7 @@ import {
   skillImages,
   experience,
   education as educationImages,
+  projectsImages,
 } from '@/utils/images';
 
 export const biography = {
@@ -275,5 +276,51 @@ export const education = [
     degree: 'Sciences and Technology',
     thesis: '',
     doc: educationImages.highSchool.doc,
+  },
+];
+
+export const projects = [
+  {
+    id: 0,
+    title: 'Vista (Property Booking)',
+    date: 'October 2023 - November 2023',
+    description:
+      'VISTA is a comprehensive home rental booking system application built using NextJS, Supabase, Prisma, Kinde, ShadcnUI, and TailwindCSS. This application aims to streamline the process of booking rental homes by providing a user-friendly interface and robust backend.',
+    image: projectsImages.vista,
+    tags: [
+      'NextJS',
+      'Typescript',
+      'Prisma ORM',
+      'Supabase',
+      'ShadCN UI',
+      'TailwindCSS',
+      'Kinde',
+      'Git',
+    ],
+    category: 'webApp',
+    github: 'https://github.com/remediios/vista',
+    demo: 'https://vista-woad.vercel.app/',
+  },
+  {
+    id: 1,
+    title: 'Blendr (Social Media App)',
+    date: 'October 2023 - November 2023',
+    description:
+      'Blendr is a cutting-edge social network web application designed to bring people together through the joy of image sharing. Developed using a modern tech stack, including TypeScript, ReactJS, Appwrite, Shadcn, Tailwind CSS, and React Query, Blendr offers users an exceptional platform to connect, express their creativity, and interact with like-minded individuals in a visually captivating way. Key Features: Image Upload and Sharing, Feed and Timeline, Engaging Interactions, User Profiles, Discover and Explore, Security and Privacy, Mobile Responsive. If you wish to test the application without signing-up or logging in, here are the credentials to use: email: janedoe@gmail.com // password: janedoe123.',
+    image: projectsImages.blendr,
+    tags: [
+      'React.JS',
+      'Typescript',
+      'Appwrite',
+      'TailwindCSS',
+      'ShadCN UI',
+      'React Query',
+      'Git',
+      'Javascript',
+      'CRUD Operations',
+    ],
+    category: 'webApp',
+    github: 'https://github.com/remediios/blendr',
+    demo: 'https://miguelremedios.pt',
   },
 ];

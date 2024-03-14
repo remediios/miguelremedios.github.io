@@ -8,6 +8,7 @@ import Hero from './components/hero';
 import Skills from './components/skills';
 import Career from './components/career';
 import Projects from './components/projects';
+import { ProjectsProvider } from './contexts/ProjectsContext';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -60,7 +61,9 @@ function App() {
           </Wrapper>
           <Career />
           <WrapperProjects>
-            <Projects />
+            <ProjectsProvider>
+              <Projects />
+            </ProjectsProvider>
           </WrapperProjects>
         </Body>
       </GlobalProvider>

@@ -1,8 +1,8 @@
-import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
-import { Modal } from "@mui/material";
-import React from "react";
-import { useRef } from "react";
-import styled from "styled-components";
+import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
+import { Modal } from '@mui/material';
+import React from 'react';
+import { useRef } from 'react';
+import styled from 'styled-components';
 
 const Container = styled.div`
   width: 100%;
@@ -193,10 +193,10 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
         <Wrapper>
           <CloseRounded
             style={{
-              position: "absolute",
-              top: "10px",
-              right: "20px",
-              cursor: "pointer",
+              position: 'absolute',
+              top: '10px',
+              right: '20px',
+              cursor: 'pointer',
             }}
             onClick={() => setOpenModal({ state: false, project: null })}
           />
@@ -220,7 +220,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                     <a
                       href={member.github}
                       target="new"
-                      style={{ textDecoration: "none", color: "inherit" }}
+                      style={{ textDecoration: 'none', color: 'inherit' }}
                     >
                       <GitHub />
                     </a>
@@ -228,7 +228,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                       <a
                         href={member.linkedin}
                         target="new"
-                        style={{ textDecoration: "none", color: "inherit" }}
+                        style={{ textDecoration: 'none', color: 'inherit' }}
                       >
                         <LinkedIn />
                       </a>
@@ -243,7 +243,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
               View Source Code
             </Button>
             <Button
-              href={project?.webapp !== "" && project?.webapp}
+              href={project?.webapp !== '' && project?.webapp}
               target="new"
             >
               View Demo

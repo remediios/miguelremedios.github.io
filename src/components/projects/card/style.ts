@@ -1,7 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const Button = styled.button`
+export const Button = styled.button`
   display: none;
   width: 100%;
   padding: 10px;
@@ -15,7 +14,7 @@ const Button = styled.button`
   transition: all 0.8s ease-in-out;
 `;
 
-const Card = styled.div`
+export const Card = styled.div`
   width: 330px;
   height: 510px;
   background-color: ${({ theme }) => theme.card};
@@ -28,17 +27,19 @@ const Card = styled.div`
   flex-direction: column;
   gap: 14px;
   transition: all 0.5s ease-in-out;
+
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
   }
+
   &:hover ${Button} {
     display: block;
   }
 `;
 
-const Image = styled.img`
+export const Image = styled.img`
   width: 100%;
   height: 180px;
   background-color: ${({ theme }) => theme.white};
@@ -46,7 +47,7 @@ const Image = styled.img`
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
 
-const Tags = styled.div`
+export const Tags = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
@@ -55,7 +56,7 @@ const Tags = styled.div`
   margin-top: 4px;
 `;
 
-const Tag = styled.span`
+export const Tag = styled.span`
   font-size: 12px;
   font-weight: 400;
   color: ${({ theme }) => theme.primary};
@@ -64,14 +65,15 @@ const Tag = styled.span`
   border-radius: 10px;
 `;
 
-const Details = styled.div`
+export const Details = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0px;
   padding: 0px 2px;
 `;
-const Title = styled.div`
+
+export const Title = styled.div`
   font-size: 20px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
@@ -84,17 +86,18 @@ const Title = styled.div`
   text-overflow: ellipsis;
 `;
 
-const Date = styled.div`
+export const Date = styled.div`
   font-size: 12px;
   margin-left: 2px;
   font-weight: 400;
   color: ${({ theme }) => theme.text_secondary + 80};
+
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }
 `;
 
-const Description = styled.div`
+export const Description = styled.div`
   font-weight: 400;
   color: ${({ theme }) => theme.text_secondary + 99};
   overflow: hidden;
@@ -106,12 +109,13 @@ const Description = styled.div`
   text-overflow: ellipsis;
 `;
 
-const Members = styled.div`
+export const Members = styled.div`
   display: flex;
   align-items: center;
   padding-left: 10px;
 `;
-const Avatar = styled.img`
+
+export const Avatar = styled.img`
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -120,29 +124,3 @@ const Avatar = styled.img`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid ${({ theme }) => theme.card};
 `;
-
-const ProjectCards = ({ project, setOpenModal }) => {
-  return (
-    <Card onClick={() => setOpenModal({ state: true, project: project })}>
-      <Image src={project.image} />
-
-      <Details>
-        <Title>{project.title}</Title>
-        <Date>{project.date}</Date>
-        <Description>{project.description}</Description>
-      </Details>
-      <Tags>
-        {project.tags?.map((tag, index) => (
-          <Tag>{tag}</Tag>
-        ))}
-      </Tags>
-      <Members>
-        {project.member?.map((member) => (
-          <Avatar src={member.img} />
-        ))}
-      </Members>
-    </Card>
-  );
-};
-
-export default ProjectCards;
