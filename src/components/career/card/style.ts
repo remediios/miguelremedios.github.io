@@ -69,7 +69,7 @@ export const Card = styled.div`
   }
 
   border: 0.1px solid ${({ theme }) => theme.primary};
-  box-shadow: rgba(255, 223, 135, 0.15) 0px 4px 24px;
+  box-shadow: rgba(213, 43, 43, 0.15) 0px 4px 24px;
 `;
 
 export const Top = styled.div`

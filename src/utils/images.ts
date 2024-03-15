@@ -66,7 +66,7 @@ import cryptoTrading from '@/images/projects/cryptocurrency-trading.png';
 import fyp from '@/images/projects/final-year-project.png';
 import silentIngredient from '@/images/projects/silent-ingredient.png';
 //User Images
-import remediosLogo from '@/images/remedios-yellow.png';
+import remediosLogo from '@/images/remedios-red-logo.png';
 import profileLogo from '@/images/projects/profile.svg';
 
 export const skillImages = {

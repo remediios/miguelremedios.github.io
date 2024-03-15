@@ -77,6 +77,8 @@ export const HeroLeftContainer = styled.div`
 
 export const HeroRightContainer = styled.div`
   width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   order: 2;
   justify-content: end;
@@ -182,21 +184,21 @@ export const ContactButton = styled.a`
   font-size: 20px;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
-  background: hsla(49, 100%, 50%, 1);
+  background: hsla(0, 67%, 50%, 1);
   background: linear-gradient(
     225deg,
-    hsla(49, 100%, 50%, 1) 0%,
-    hsla(40, 100%, 50%, 1) 100%
+    hsla(0, 67%, 50%, 1) 0%,
+    hsla(0, 83.06%, 27.33%, 1) 100%
   );
   background: -moz-linear-gradient(
     225deg,
-    hsla(49, 100%, 50%, 1) 0%,
-    hsla(40, 100%, 50%, 1) 100%
+    hsla(0, 67%, 50%, 1) 0%,
+    hsla(0, 83.06%, 27.33%, 1) 100%
   );
   background: -webkit-linear-gradient(
     225deg,
-    hsla(49, 100%, 50%, 1) 0%,
-    hsla(40, 100%, 50%, 1) 100%
+    hsla(0, 67%, 50%, 1) 0%,
+    hsla(0, 83.06%, 27.33%, 1) 100%
   );
   box-shadow: 5px 5px 20px ${({ theme }) => theme.hero_button};
 

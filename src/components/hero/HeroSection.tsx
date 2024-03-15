@@ -14,7 +14,7 @@ import {
   TitleMini,
 } from './style';
 import HeroAnimation from './HeroAnimation';
-import HeroImage from '@/images/remedios-yellow.png';
+import HeroImage from '@/images/remedios-red-logo.png';
 import { biography } from '@/utils/data';
 
 const HeroSection = () => {

@@ -63,7 +63,7 @@ export const ContactForm = styled.form`
   background-color: ${({ theme }) => theme.card};
   padding: 32px;
   border-radius: 16px;
-  box-shadow: rgba(230, 188, 5, 0.15) 0px 4px 24px;
+  box-shadow: rgba(213, 43, 43, 0.15) 0px 4px 24px;
   margin-top: 28px;
   gap: 15px;
 `;
@@ -129,21 +129,21 @@ export const ContactButton = styled.input`
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  background: hsla(49, 100%, 50%, 1);
+  background: hsla(0, 67%, 50%, 1);
   background: linear-gradient(
     225deg,
-    hsla(49, 100%, 50%, 1) 0%,
-    hsla(40, 100%, 50%, 1) 100%
+    hsla(0, 67%, 50%, 1) 0%,
+    hsla(0, 83.06%, 27.33%, 1) 100%
   );
   background: -moz-linear-gradient(
     225deg,
-    hsla(49, 100%, 50%, 1) 0%,
-    hsla(40, 100%, 50%, 1) 100%
+    hsla(0, 67%, 50%, 1) 0%,
+    hsla(0, 83.06%, 27.33%, 1) 100%
   );
   background: -webkit-linear-gradient(
     225deg,
-    hsla(49, 100%, 50%, 1) 0%,
-    hsla(40, 100%, 50%, 1) 100%
+    hsla(0, 67%, 50%, 1) 0%,
+    hsla(0, 83.06%, 27.33%, 1) 100%
   );
   margin-top: 2px;
   border-radius: 12px;
