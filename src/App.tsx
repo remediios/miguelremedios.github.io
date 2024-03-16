@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { Body, Wrapper, WrapperProjects } from './style';
@@ -12,9 +12,10 @@ import Career from './components/career';
 import Projects from './components/projects';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import useDarkMode from './hooks/useDarkMode';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useDarkMode();
   const theme = darkMode ? darkTheme : lightTheme;
 
   return (
