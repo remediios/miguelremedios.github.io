@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { Body, Wrapper, WrapperProjects } from './style';
