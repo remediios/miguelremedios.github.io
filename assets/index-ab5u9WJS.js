@@ -545,6 +545,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   width: 100%;
   max-width: 500px;
   background: ${({theme:e})=>e.card_light};
+  transition: all 0.3s ease-in-out;
   border: 0.1px solid ${({theme:e})=>e.primary};
   box-shadow: rgba(213, 43, 43, 0.15) 0px 4px 24px;
   border-radius: 16px;
