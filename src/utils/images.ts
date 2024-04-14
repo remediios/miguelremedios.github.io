@@ -65,6 +65,8 @@ import pomodoro from '@/images/projects/pomodoro.gif';
 import cryptoTrading from '@/images/projects/cryptocurrency-trading.png';
 import fyp from '@/images/projects/final-year-project.png';
 import silentIngredient from '@/images/projects/silent-ingredient.png';
+import honoAPI from '@/images/projects/hono-rest-api.png';
+
 //User Images
 import remediosLogo from '@/images/remedios-red-logo.png';
 import profileLogo from '@/images/projects/profile.svg';
@@ -150,5 +152,6 @@ export const projectsImages = {
     cryptoTrading,
     fyp,
     silentIngredient,
+    honoAPI,
   },
 };

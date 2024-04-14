@@ -437,4 +437,24 @@ export const projects = [
     github: 'https://github.com/remediios/pomodoro-app',
     demo: 'https://pomodortimero.netlify.app/',
   },
+  {
+    id: 7,
+    title: 'Hono Redis REST API',
+    date: 'April 2024',
+    description:
+      'This project is a boilerplate codebase for building a high-performance, globally distributed REST API using Cloudflare Workers, HonoJS, Redis, and NextJS. This project includes a speed search feature for country names, rate limiting, and caching mechanisms.',
+    image: projectsImages.projectsImg.honoAPI,
+    tags: [
+      'Typescript',
+      'NextJS',
+      'Redis',
+      'HonoJS',
+      'Cloudflare Workers',
+      'ShadcnUI',
+      'Git',
+    ],
+    category: 'api',
+    github: 'https://github.com/remediios/hono-redis-rest-api',
+    demo: 'https://hono-redis-rest-api.vercel.app/',
+  },
 ];
