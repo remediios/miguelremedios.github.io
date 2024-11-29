@@ -45,6 +45,7 @@ import postman from '@/images/skills/tools/postman.svg';
 import insomnia from '@/images/skills/tools/insomnia.svg';
 
 //Experience
+import rootkey from '@/images/experience/rootkey_logo.png';
 import elecctro from '@/images/experience/elecctro_logo.jpeg';
 import tvremedios from '@/images/experience/tvremedios_logo.jpg';
 
@@ -122,6 +123,7 @@ export const skillImages = {
 };
 
 export const experience = {
+  rootkey,
   elecctro,
   tvremedios,
 };
