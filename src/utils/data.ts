@@ -207,7 +207,7 @@ export const experiences = [
     img: experience.rootkey,
     role: "Head of Research & Development",
     company: "ROOTKey",
-    date: "November 2023 - Present",
+    date: "October 2024 - Present",
     desc: "As Head of Research & Development, I lead and coordinate multidisciplinary teams to drive innovation across ROOTKey's blockchain and cybersecurity solutions. I oversee the execution of European Union-funded projects, ensuring alignment with strategic goals and compliance with international standards. Partnering closely with the CEO and CTO, I contribute to shaping the company's technological vision and long-term strategy. By fostering collaboration between R&D, product, and engineering teams, I ensure the seamless delivery of cutting-edge, secure, and scalable solutions that uphold ROOTKey’s commitment to data authenticity, integrity, and trust.",
     skills: [
       "Team Leadership",
@@ -227,7 +227,7 @@ export const experiences = [
     img: experience.rootkey,
     role: 'FullStack Engineer',
     company: 'ROOTKey',
-    date: 'May 2023 - Present',
+    date: 'May 2024 - Present',
     desc: "Led the development of ROOTKey's secure digital solutions, implementing innovative features across backend and frontend systems. Built scalable backend architectures using Node.js and Python, while designing intuitive client-facing interfaces with React and TypeScript. Enhanced system performance by debugging complex issues and optimizing APIs for decentralized asset management. Refined user interfaces for digital identity solutions, ensuring a seamless user experience. Collaborated with multidisciplinary teams to deliver robust, user-centric applications that align with ROOTKey’s mission of securing data integrity and authenticity.",
     skills: [
       'Python',
